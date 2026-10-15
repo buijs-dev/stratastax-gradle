@@ -1,0 +1,118 @@
+# The shared stratastax version catalog, published as dev.buijs.stratastax:gradle-catalog and
+# registered as `libs` by the dev.buijs.stratastax.settings plugin. Third-party libraries and
+# build tooling only: versions of stratastax modules stay in each repository's own
+# stratastax.versions.toml (the `stratastax` catalog).
+[versions]
+java = "25"
+
+# Build tooling
+dokka = "2.2.0"
+gradle-node = "7.1.0"
+jacoco = "0.8.15"
+kotlin = "2.4.21"
+kover = "0.9.11"
+node = "24.11.1"
+openapi = "7.21.0"
+stratastax-style = "1.0.0"
+
+# Libraries
+assertj = "3.27.7"
+commons-csv = "1.11.0"
+jackson = "2.22.1"
+jackson-databind-nullable = "0.2.6"
+jooq = "3.21.6"
+junit = "6.1.2"
+kotlin-logging = "7.0.5"
+kotlinx-coroutines = "1.10.2"
+logback = "1.6.4"
+mockk = "1.14.9"
+mockk-quarkus = "3.1.0"
+mutiny = "3.3.0"
+quarkus = "3.38.1"
+slf4j = "2.0.18"
+smallrye-config = "3.17.2"
+swagger-parser = "2.1.46"
+testcontainers = "1.20.4"
+uuid-creator = "6.1.1"
+wiremock = "3.13.2"
+
+[libraries]
+assertj = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+commons-csv = { group = "org.apache.commons", name = "commons-csv", version.ref = "commons-csv" }
+jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+jackson-databind-nullable = { group = "org.openapitools", name = "jackson-databind-nullable", version.ref = "jackson-databind-nullable" }
+jackson-dataformat-xml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-xml", version.ref = "jackson" }
+jackson-dataformat-yaml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version.ref = "jackson" }
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "jackson" }
+jakarta-validation = { group = "jakarta.validation", name = "jakarta.validation-api" }
+jakarta-ws-rs = { group = "jakarta.ws.rs", name = "jakarta.ws.rs-api" }
+jooq = { group = "org.jooq", name = "jooq", version.ref = "jooq" }
+junit-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit" }
+junit-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit" }
+junit-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junit" }
+junit-platform = { group = "org.junit.platform", name = "junit-platform-launcher", version.ref = "junit" }
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging", version.ref = "kotlin-logging" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jdk8 = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-jdk8", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+openapi-generator-gradle-plugin = { group = "org.openapitools", name = "openapi-generator-gradle-plugin", version.ref = "openapi" }
+postgresql = { group = "org.postgresql", name = "postgresql" }
+rest-assured = { group = "io.rest-assured", name = "rest-assured" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+slf4j-nop = { group = "org.slf4j", name = "slf4j-nop", version.ref = "slf4j" }
+smallrye = { group = "io.smallrye.config", name = "smallrye-config", version.ref = "smallrye-config" }
+smallrye-mutiny-kotlin = { group = "io.smallrye.reactive", name = "mutiny-kotlin", version.ref = "mutiny" }
+smallrye-mutiny-vertx-pg-client = { group = "io.smallrye.reactive", name = "smallrye-mutiny-vertx-pg-client" }
+swagger-parser = { group = "io.swagger.parser.v3", name = "swagger-parser", version.ref = "swagger-parser" }
+testcontainers-junit = { group = "org.testcontainers", name = "junit-jupiter", version.ref = "testcontainers" }
+testcontainers-postgresql = { group = "org.testcontainers", name = "postgresql", version.ref = "testcontainers" }
+uuid-creator = { group = "com.github.f4b6a3", name = "uuid-creator", version.ref = "uuid-creator" }
+vertx-pg-client = { group = "io.vertx", name = "vertx-pg-client" }
+vertx-sql-client = { group = "io.vertx", name = "vertx-sql-client" }
+wiremock = { group = "org.wiremock", name = "wiremock-standalone", version.ref = "wiremock" }
+
+# Quarkus
+quarkus-arc = { group = "io.quarkus", name = "quarkus-arc", version.ref = "quarkus" }
+quarkus-arc-deployment = { group = "io.quarkus", name = "quarkus-arc-deployment", version.ref = "quarkus" }
+quarkus-bom = { group = "io.quarkus.platform", name = "quarkus-bom", version.ref = "quarkus" }
+quarkus-core = { group = "io.quarkus", name = "quarkus-core", version.ref = "quarkus" }
+quarkus-core-deployment = { group = "io.quarkus", name = "quarkus-core-deployment", version.ref = "quarkus" }
+quarkus-extension = { group = "io.quarkus", name = "quarkus-extension-processor", version.ref = "quarkus" }
+quarkus-flyway = { group = "io.quarkus", name = "quarkus-flyway", version.ref = "quarkus" }
+quarkus-hibernate-validator = { group = "io.quarkus", name = "quarkus-hibernate-validator", version.ref = "quarkus" }
+quarkus-jackson = { group = "io.quarkus", name = "quarkus-jackson", version.ref = "quarkus" }
+quarkus-junit = { group = "io.quarkus", name = "quarkus-junit5", version.ref = "quarkus" }
+quarkus-junit-internal = { group = "io.quarkus", name = "quarkus-junit5-internal", version.ref = "quarkus" }
+quarkus-junit-mockito = { group = "io.quarkus", name = "quarkus-junit-mockito", version.ref = "quarkus" }
+quarkus-junit-mockk = { group = "io.quarkiverse.mockk", name = "quarkus-junit5-mockk", version.ref = "mockk-quarkus" }
+quarkus-kotlin = { group = "io.quarkus", name = "quarkus-kotlin", version.ref = "quarkus" }
+quarkus-oidc-client = { group = "io.quarkus", name = "quarkus-oidc-client", version.ref = "quarkus" }
+quarkus-postgresql = { group = "io.quarkus", name = "quarkus-jdbc-postgresql", version.ref = "quarkus" }
+quarkus-rest = { group = "io.quarkus", name = "quarkus-rest", version.ref = "quarkus" }
+quarkus-rest-client-jackson = { group = "io.quarkus", name = "quarkus-rest-client-jackson", version.ref = "quarkus" }
+quarkus-rest-jackson = { group = "io.quarkus", name = "quarkus-rest-jackson", version.ref = "quarkus" }
+quarkus-scheduler = { group = "io.quarkus", name = "quarkus-scheduler", version.ref = "quarkus" }
+quarkus-security = { group = "io.quarkus", name = "quarkus-security", version.ref = "quarkus" }
+quarkus-smallrye-context-propagation = { group = "io.quarkus", name = "quarkus-smallrye-context-propagation", version.ref = "quarkus" }
+quarkus-smallrye-jwt = { group = "io.quarkus", name = "quarkus-smallrye-jwt", version.ref = "quarkus" }
+quarkus-yaml = { group = "io.quarkus", name = "quarkus-config-yaml", version.ref = "quarkus" }
+
+# Gradle plugins, as dependencies of build logic (a gradle-build included build)
+dokka-plugin = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version.ref = "dokka" }
+jooq-plugin = { group = "org.jooq.jooq-codegen-gradle", name = "org.jooq.jooq-codegen-gradle.gradle.plugin", version.ref = "jooq" }
+kotlin-plugin-allopen = { group = "org.jetbrains.kotlin.plugin.allopen", name = "org.jetbrains.kotlin.plugin.allopen.gradle.plugin", version.ref = "kotlin" }
+kotlin-plugin-jvm = { group = "org.jetbrains.kotlin.jvm", name = "org.jetbrains.kotlin.jvm.gradle.plugin", version.ref = "kotlin" }
+kover-plugin = { group = "org.jetbrains.kotlinx", name = "kover-gradle-plugin", version.ref = "kover" }
+node-plugin = { group = "com.github.node-gradle.node", name = "com.github.node-gradle.node.gradle.plugin", version.ref = "gradle-node" }
+openapi-plugin = { group = "org.openapi.generator", name = "org.openapi.generator.gradle.plugin", version.ref = "openapi" }
+quarkus-extension-plugin = { group = "io.quarkus.extension", name = "io.quarkus.extension.gradle.plugin", version.ref = "quarkus" }
+quarkus-plugin = { group = "io.quarkus", name = "io.quarkus.gradle.plugin", version.ref = "quarkus" }
+stratastax-style-plugin = { group = "dev.buijs.stratastax", name = "style-gradle-plugin", version.ref = "stratastax-style" }
+
+[bundles]
+logging = ["kotlin-logging", "slf4j"]
+quarkus = ["smallrye", "quarkus-yaml", "quarkus-kotlin"]
+test = ["assertj", "junit-api", "junit-engine", "junit-params", "junit-platform", "logback", "mockk"]
+test-quarkus = ["quarkus-junit", "quarkus-junit-internal"]
