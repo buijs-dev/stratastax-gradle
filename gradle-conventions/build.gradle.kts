@@ -10,6 +10,7 @@ description = "Convention plugins and the settings plugin shared by all stratast
 dependencies {
     implementation(libs.kotlin.plugin.jvm)
     implementation(libs.kover.plugin)
+    implementation(libs.node.plugin)
     implementation(libs.dokka.plugin)
     implementation(libs.stratastax.style.plugin)
 }
