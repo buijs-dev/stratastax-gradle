@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-17
+
 ### Added
 - `gradle-conventions`: `stratastax.node`, Node.js with the version of the shared catalog.
 
